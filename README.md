@@ -20,7 +20,7 @@ limitations under the License.
 
 # Unary
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Apply a unary callback to elements in a strided input array and assign results to elements in a strided output array.
 
@@ -199,6 +199,10 @@ console.log( y );
 
 Character codes for data types:
 
+<!-- The following is auto-generated. Do not manually edit. See scripts/loops.js. -->
+
+<!-- charcodes -->
+
 -   **d**: `float64` (double-precision floating-point number).
 -   **f**: `float32` (single-precision floating-point number).
 -   **c**: `complex64` (single-precision floating-point complex number).
@@ -213,6 +217,8 @@ Character codes for data types:
 -   **v**: `uint64` (unsigned 64-bit integer).
 -   **x**: `bool` (boolean).
 
+<!-- ./charcodes -->
+
 Function name suffix naming convention:
 
 ```text
@@ -220,6 +226,8 @@ stdlib_strided_<input_data_type>_<output_data_type>[_as_<callback_arg_data_type>
 ```
 
 For example,
+
+<!-- run-disable -->
 
 ```c
 void stdlib_strided_d_d(...) {...}
@@ -229,6 +237,8 @@ is a function which accepts one double-precision floating-point strided input ar
 
 To support callbacks whose input arguments and/or return values are of a different data type than the strided input and/or output array data types, the naming convention supports appending an `as` suffix. For example,
 
+<!-- run-disable -->
+
 ```c
 void stdlib_strided_f_f_as_d_d(...) {...}
 ```
@@ -237,13 +247,36 @@ is a function which accepts one single-precision floating-point strided input ar
 
 ```c
 // Convert each input array element to double-precision:
-double dxi = (double)fx[ i ];
+double in1 = (double)x[ i ];
 
 // Evaluate the callback:
-double dyi = f( dxi );
+double out = f( in1 );
 
 // Convert the callback return value to single-precision:
-fy[ i ] = (float)dyi;
+y[ i ] = (float)out;
+```
+
+When the strided input array and the callback (i.e., the input argument and return value) share the same data type, the `as` suffix can be omitted. For example,
+
+<!-- run-disable -->
+
+```c
+void stdlib_strided_f_d(...) {...}
+```
+
+is a function which accepts one single-precision floating-point strided input array and one double-precision floating-point strided output array. The callback is assumed to accept and return single-precision floating-point numbers. Accordingly, the input and output values are cast according to the following conversion sequence
+
+<!-- run-disable -->
+
+```c
+// Retrieve each input array element as single-precision:
+float in1 = (float)x[ i ];
+
+// Evaluate the callback:
+float out = f( in1 );
+
+// Convert the callback return value to double-precision:
+y[ i ] = (double)out;
 ```
 
 </section>
@@ -270,7 +303,9 @@ npm install @stdlib/strided-base-unary
 #include "stdlib/strided/base/unary.h"
 ```
 
-<!-- NOTE: keep the following in alphabetical order -->
+<!-- The following is auto-generated. Do not manually edit. See scripts/loops.js. -->
+
+<!-- loops -->
 
 #### stdlib_strided_b_b( \*arrays[], \*shape, \*strides, \*fcn )
 
@@ -3369,6 +3404,8 @@ The function accepts the following arguments:
 void stdlib_strided_v_v( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
+<!-- ./loops -->
+
 <!-- macros -->
 
 * * *
@@ -3559,6 +3596,8 @@ In addition to the variables defined by the `STDLIB_STRIDED_UNARY_LOOP_PREAMBLE`
     }
 ```
 
+<!-- ./macros -->
+
 </section>
 
 <!-- /.usage -->
@@ -3677,8 +3716,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/strided-base-unary/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/strided-base-unary?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/strided-base-unary.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/strided-base-unary/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
