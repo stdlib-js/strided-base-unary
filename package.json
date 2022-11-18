@@ -39,6 +39,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/complex-float32": "^0.0.x",
+    "@stdlib/complex-float64": "^0.0.x",
     "@stdlib/types": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x",
     "@stdlib/utils-library-manifest": "^0.0.x"
@@ -50,7 +52,6 @@
     "@stdlib/array-float32": "^0.0.x",
     "@stdlib/array-float64": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
-    "@stdlib/complex-float32": "^0.0.x",
     "@stdlib/complex-imag": "^0.0.x",
     "@stdlib/complex-real": "^0.0.x",
     "@stdlib/fs-read-dir": "^0.0.x",
