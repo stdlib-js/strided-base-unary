@@ -53,9 +53,9 @@
     "@stdlib/utils-library-manifest": "^0.2.1"
   },
   "devDependencies": {
-    "@stdlib/array-complex64": "^0.2.0",
-    "@stdlib/array-filled": "^0.2.0",
-    "@stdlib/array-filled-by": "^0.2.0",
+    "@stdlib/array-complex64": "^0.2.1",
+    "@stdlib/array-filled": "^0.2.1",
+    "@stdlib/array-filled-by": "^0.2.1",
     "@stdlib/array-float32": "^0.2.1",
     "@stdlib/array-float64": "^0.2.1",
     "@stdlib/complex-imagf": "^0.2.1",
@@ -76,7 +76,7 @@
     "@stdlib/ndarray-base-dtype-desc": "^0.2.1",
     "@stdlib/ndarray-base-dtype2c": "^0.2.1",
     "@stdlib/ndarray-safe-casts": "^0.2.1",
-    "@stdlib/random-base-discrete-uniform": "^0.2.0",
+    "@stdlib/random-base-discrete-uniform": "^0.2.1",
     "@stdlib/strided-dtypes": "^0.2.1",
     "@stdlib/string-replace": "^0.2.1",
     "@stdlib/string-substring-after": "^0.2.1",
