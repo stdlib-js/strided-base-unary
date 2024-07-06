@@ -46,8 +46,8 @@
     "@stdlib/array-base-getter": "^0.2.1",
     "@stdlib/array-base-setter": "^0.2.1",
     "@stdlib/array-dtype": "^0.2.1",
-    "@stdlib/complex-float32": "^0.2.1",
-    "@stdlib/complex-float64": "^0.2.1",
+    "@stdlib/complex-float32-ctor": "^0.0.1",
+    "@stdlib/complex-float64-ctor": "^0.0.1",
     "@stdlib/types": "^0.3.2",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
     "@stdlib/utils-library-manifest": "^0.2.1"
