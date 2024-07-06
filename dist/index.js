@@ -1,16 +1,16 @@
-"use strict";var p=function(a,u){return function(){return u||a((u={exports:{}}).exports,u),u.exports}};var d=p(function(er,N){
-function E(a,u,n,x){var i,e,v,r,t,y,s,c;if(s=u[0],!(s<=0))for(i=n[0],e=n[1],i<0?v=(1-s)*i:v=0,e<0?r=(1-s)*e:r=0,t=a[0],y=a[1],c=0;c<s;c++)y[r]=x(t[v]),v+=i,r+=e}N.exports=E
-});var S=p(function(vr,G){
-function F(a,u,n,x,i){var e,v,r,t,y,s,c,o,q,f;if(q=u[0],!(q<=0))for(r=n[0],t=n[1],r<0?y=(1-q)*r:y=0,t<0?s=(1-q)*t:s=0,c=a[0],o=a[1],e=x[0],v=x[1],f=0;f<q;f++)v(o,s,i(e(c,y))),y+=r,s+=t}G.exports=F
-});var R=p(function(ar,O){
-var m=require('@stdlib/array-base-assert-is-accessor-array/dist'),H=require('@stdlib/array-base-accessor-getter/dist'),I=require('@stdlib/array-base-accessor-setter/dist'),J=require('@stdlib/array-base-getter/dist'),K=require('@stdlib/array-base-setter/dist'),g=require('@stdlib/array-dtype/dist'),L=d(),M=S();function P(a,u,n,x){var i,e,v,r;return v=a[0],m(v)&&(i=H(g(v))),r=a[1],m(r)&&(e=I(g(r))),i||e?(i=i||J(g(v)),e=e||K(g(r)),M(a,u,n,[i,e],x)):L(a,u,n,x)}O.exports=P
-});var j=p(function(ir,b){
-function Q(a,u,n,x,i){var e,v,r,t,y,s,c,o;if(c=u[0],!(c<=0))for(r=x[0],t=x[1],e=n[0],v=n[1],y=a[0],s=a[1],o=0;o<c;o++)s[t]=i(y[r]),r+=e,t+=v}b.exports=Q
-});var w=p(function(tr,k){
-function T(a,u,n,x,i,e){var v,r,t,y,s,c,o,q,f,A;if(f=u[0],!(f<=0))for(s=x[0],c=x[1],t=n[0],y=n[1],o=a[0],q=a[1],v=i[0],r=i[1],A=0;A<f;A++)r(q,c,e(v(o,s))),s+=t,c+=y}k.exports=T
-});var C=p(function(ur,B){
-var z=require('@stdlib/array-base-assert-is-accessor-array/dist'),U=require('@stdlib/array-base-accessor-getter/dist'),V=require('@stdlib/array-base-accessor-setter/dist'),W=require('@stdlib/array-base-getter/dist'),X=require('@stdlib/array-base-setter/dist'),l=require('@stdlib/array-dtype/dist'),Y=j(),Z=w();function _(a,u,n,x,i){var e,v,r,t;return r=a[0],z(r)&&(e=U(l(r))),t=a[1],z(t)&&(v=V(l(t))),e||v?(e=e||W(l(r)),v=v||X(l(t)),Z(a,u,n,x,[e,v],i)):Y(a,u,n,x,i)}B.exports=_
-});var $=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),D=R(),h=C();$(D,"ndarray",h);module.exports=D;
+"use strict";var x=function(e,t){return function(){return t||e((t={exports:{}}).exports,t),t.exports}};var A=x(function(ur,S){
+function H(e,t,v,n,u){var r,a,i,c,y,o,s,q;if(s=t[0],!(s<=0))for(i=n[0],c=n[1],r=v[0],a=v[1],y=e[0],o=e[1],q=0;q<s;q++)o[c]=u(y[i]),i+=r,c+=a}S.exports=H
+});var O=x(function(ir,m){
+var l=require('@stdlib/strided-base-stride2offset/dist'),I=A();function J(e,t,v,n){var u,r;return r=t[0],u=[l(r,v[0]),l(r,v[1])],I(e,t,v,u,n)}m.exports=J
+});var N=x(function(nr,R){
+function K(e,t,v,n,u,r){var a,i,c,y,o,s,q,G,g,p;if(g=t[0],!(g<=0))for(o=n[0],s=n[1],c=v[0],y=v[1],q=e[0],G=e[1],a=u[0],i=u[1],p=0;p<g;p++)i(G,s,r(a(q,o))),o+=c,s+=y}R.exports=K
+});var k=x(function(cr,j){
+var b=require('@stdlib/strided-base-stride2offset/dist'),L=N();function M(e,t,v,n,u){var r,a;return a=t[0],r=[b(a,v[0]),b(a,v[1])],L(e,t,v,r,n,u)}j.exports=M
+});var B=x(function(sr,z){
+var w=require('@stdlib/array-base-assert-is-accessor-array/dist'),P=require('@stdlib/array-base-accessor-getter/dist'),Q=require('@stdlib/array-base-accessor-setter/dist'),T=require('@stdlib/array-base-getter/dist'),U=require('@stdlib/array-base-setter/dist'),f=require('@stdlib/array-dtype/dist'),V=O(),W=k();function X(e,t,v,n){var u,r,a,i;return a=e[0],w(a)&&(u=P(f(a))),i=e[1],w(i)&&(r=Q(f(i))),u||r?(u=u||T(f(a)),r=r||U(f(i)),W(e,t,v,[u,r],n)):V(e,t,v,n)}z.exports=X
+});var E=x(function(or,D){
+var C=require('@stdlib/array-base-assert-is-accessor-array/dist'),Y=require('@stdlib/array-base-accessor-getter/dist'),Z=require('@stdlib/array-base-accessor-setter/dist'),_=require('@stdlib/array-base-getter/dist'),$=require('@stdlib/array-base-setter/dist'),d=require('@stdlib/array-dtype/dist'),h=A(),rr=N();function er(e,t,v,n,u){var r,a,i,c;return i=e[0],C(i)&&(r=Y(d(i))),c=e[1],C(c)&&(a=Z(d(c))),r||a?(r=r||_(d(i)),a=a||$(d(c)),rr(e,t,v,n,[r,a],u)):h(e,t,v,n,u)}D.exports=er
+});var tr=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),F=B(),ar=E();tr(F,"ndarray",ar);module.exports=F;
 /** @license Apache-2.0 */
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
