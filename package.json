@@ -40,12 +40,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-base-accessor-getter": "^0.2.1",
-    "@stdlib/array-base-accessor-setter": "^0.2.1",
+    "@stdlib/array-base-accessor-getter": "^0.2.2",
+    "@stdlib/array-base-accessor-setter": "^0.2.2",
     "@stdlib/array-base-assert-is-accessor-array": "^0.2.2",
     "@stdlib/array-base-getter": "^0.2.2",
     "@stdlib/array-base-setter": "^0.2.2",
-    "@stdlib/array-dtype": "^0.2.1",
+    "@stdlib/array-dtype": "^0.3.0",
     "@stdlib/complex-float32-ctor": "^0.0.2",
     "@stdlib/complex-float64-ctor": "^0.0.3",
     "@stdlib/strided-base-stride2offset": "^0.1.0",
@@ -54,7 +54,7 @@
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-complex64": "^0.2.1",
+    "@stdlib/array-complex64": "^0.3.0",
     "@stdlib/array-filled": "^0.2.1",
     "@stdlib/array-filled-by": "^0.2.1",
     "@stdlib/array-float32": "^0.2.2",
