@@ -49,7 +49,7 @@
     "@stdlib/complex-float32-ctor": "^0.0.2",
     "@stdlib/complex-float64-ctor": "^0.0.3",
     "@stdlib/strided-base-stride2offset": "^0.1.0",
-    "@stdlib/types": "^0.4.1",
+    "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
