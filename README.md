@@ -6305,7 +6305,7 @@ The macro expects the following arguments:
 
 In addition to the variables expected by `STDLIB_STRIDED_UNARY_LOOP_PREAMBLE`, the macro expects the following variables to be defined:
 
--   **f**: unary callback. 
+-   **f**: unary callback.
 
 In addition to the variables defined by the `STDLIB_STRIDED_UNARY_LOOP_PREAMBLE`, the macro defines the following variables:
 
@@ -6335,7 +6335,7 @@ The macro expects the following arguments:
 
 In addition to the variables expected by `STDLIB_STRIDED_UNARY_LOOP_PREAMBLE`, the macro expects the following variables to be defined:
 
--   **f**: unary callback. 
+-   **f**: unary callback.
 
 In addition to the variables defined by the `STDLIB_STRIDED_UNARY_LOOP_PREAMBLE`, the macro defines the following variables:
 

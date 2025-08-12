@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-11)
+## Unreleased (2025-08-12)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
 -   [`66a381d`](https://github.com/stdlib-js/stdlib/commit/66a381d7118cf355417d811f594876cce9324667) - **chore:** fix C lint errors  [(#6866)](https://github.com/stdlib-js/stdlib/pull/6866 ) _(by Lalit Narayan Yadav)_
 -   [`845e64a`](https://github.com/stdlib-js/stdlib/commit/845e64a2f7e12bd60729097230774569b2d4954e) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`3938b26`](https://github.com/stdlib-js/stdlib/commit/3938b265e603116448c89fcaa58df70e79d40f59) - **refactor:** update paths _(by Gururaj Gurram)_
@@ -38,10 +39,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Gururaj Gurram
 -   Lalit Narayan Yadav
+-   Philipp Burckhardt
 
 </section>
 
